@@ -1,0 +1,77 @@
+header > h1 {
+  color: var(--heading-primary);
+  font-size: var(--heading-primary-size);
+  text-align: center;
+  text-shadow: 1px 1px black;
+  padding: 2rem 0;
+  letter-spacing: 2px;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.form-container > form {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 30%;
+  border-radius: 1rem;
+  background-image: var(--background-light-gradient);
+}
+.form__heading {
+  margin-bottom: 1rem;
+}
+.form-field {
+  position: relative;
+  /* border: 1px solid green; */
+  padding: 1rem 0;
+  width: 70%;
+  margin: 1rem;
+}
+.form-field > input {
+  margin-top: 0.3rem;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--background-highlight);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--paragraph-dark);
+  outline: none;
+}
+.form-lable {
+  color: var(--heading-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.from__set-profile {
+  background-image: var(--background-dark-gradient);
+  padding: 0.5rem 1rem;
+  color: rgb(250, 250, 250);
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  header > h1 {
+    font-size: 1.5rem;
+  }
+  .form-container > form {
+    width: 80%;
+    padding: 2rem 1rem;
+  }
+  .form-field {
+    width: 95%;
+  }
+  .form-field > input {
+    font-size: 0.9rem;
+  }
+}

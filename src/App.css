@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --background-dark-gradient: linear-gradient(
+    135deg,
+    rgb(40, 40, 40),
+    rgb(75, 75, 75)
+  );
+  /* --background-light-gradient: linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(185, 185, 185)
+  ); */
+  --background-light-gradient: radial-gradient(
+    circle,
+    rgb(235, 235, 235),
+    rgb(221, 221, 221)
+  );
+  --background-highlight: #7a7a7a;
+  /* heading */
+  --heading-primary: #46a2fd;
+  --heading-secondary: #3397fa;
+  --heading-primary-size: 2.5rem;
+  --heading-secondary-size: 1.2rem;
+  /* paragraph */
+  --paragraph-primary: #cdcdcd;
+  --paragraph-scondary: #959595;
+  --paragraph-dark: #343434;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  min-height: 100vh;
+  background-image: var(--background-dark-gradient);
+  font-family: "Montserrat", sans-serif;
+}
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  outline: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
